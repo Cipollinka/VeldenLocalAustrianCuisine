@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import {View, Text, StyleSheet, ScrollView, TouchableOpacity, Image} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import { useRoute, useNavigation } from '@react-navigation/native';
 import Header from '../components/Header';
@@ -12,12 +12,10 @@ export default function TraditionsInfoScreen() {
     const shareMessage = `${item.title}\n\n${item.content}`;
 
     return (
-        <LinearGradient
-            colors={['#263134', '#1F272B']}
-            start={{ x: 1, y: 0 }}
-            end={{ x: 0, y: 1 }}
+        <View
             style={styles.container}
         >
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../AppManager/bg.png')} />
             <Header />
             <ScrollView contentContainerStyle={styles.contentContainer}>
                 <View style={styles.tile}>
@@ -32,7 +30,7 @@ export default function TraditionsInfoScreen() {
                     </TouchableOpacity>
                 </View>
             </ScrollView>
-        </LinearGradient>
+        </View>
     );
 }
 

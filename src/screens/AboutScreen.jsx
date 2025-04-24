@@ -18,7 +18,7 @@ export default function AboutScreen() {
             <Header />
 
             <ImageBackground
-                source={require('../assets/AboutBG.png')}
+                source={require('../AppManager/bg.png')}
                 style={styles.headerImage}
                 resizeMode="cover"
             >

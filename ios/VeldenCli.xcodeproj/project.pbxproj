@@ -26,6 +26,7 @@
 		3B4392A12AC88292D35C810B /* Pods-VeldenCli.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeldenCli.debug.xcconfig"; path = "Target Support Files/Pods-VeldenCli/Pods-VeldenCli.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-VeldenCli.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeldenCli.release.xcconfig"; path = "Target Support Files/Pods-VeldenCli/Pods-VeldenCli.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-VeldenCli.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VeldenCli.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2775E12DBA487B00CC8080 /* VeldenCli.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = VeldenCli.entitlements; path = VeldenCli/VeldenCli.entitlements; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = VeldenCli/AppDelegate.swift; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = VeldenCli/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1070F08B0F643F6B1A16B65 /* LibreBaskerville-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LibreBaskerville-Italic.ttf"; path = "../src/assets/fonts/LibreBaskerville-Italic.ttf"; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		13B07FAE1A68108700A75B9A /* VeldenCli */ = {
 			isa = PBXGroup;
 			children = (
+				6A2775E12DBA487B00CC8080 /* VeldenCli.entitlements */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				761780EC2CA45674006654EE /* AppDelegate.swift */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
@@ -279,6 +281,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VeldenCli/VeldenCli.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = VeldenCli/Info.plist;
@@ -287,7 +290,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -307,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = VeldenCli/VeldenCli.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = VeldenCli/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
@@ -314,7 +318,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",

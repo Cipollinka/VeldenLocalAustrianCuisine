@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useRef } from 'react';
-import { View, StyleSheet, PanResponder } from 'react-native';
+import {View, StyleSheet, PanResponder, Image} from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import { useSelector } from 'react-redux';
 
@@ -52,8 +52,8 @@ export default function MapScreen() {
 
     return (
         <View style={styles.container}>
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../AppManager/bg.png')} />
             <Header />
-
             <MapView
                 style={styles.map}
                 initialRegion={initialRegion}

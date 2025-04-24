@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { View, Text, StyleSheet, ScrollView } from 'react-native';
+import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 import { useSelector } from 'react-redux';
 import LinearGradient from 'react-native-linear-gradient';
 import Header from '../components/Header';
@@ -19,12 +19,10 @@ export default function SavedLocationsScreen() {
     }, [places]);
 
     return (
-        <LinearGradient
-            colors={['#263134', '#1F272B']}
-            start={{ x: 1, y: 0 }}
-            end={{ x: 0, y: 1 }}
+        <View
             style={styles.container}
         >
+            <Image style={{flex: 1, width: '100%', height: '100%', position: 'absolute'}} source={require('../AppManager/bg.png')} />
             <Header />
             <ScrollView
                 contentContainerStyle={styles.scrollContent}
@@ -49,7 +47,7 @@ export default function SavedLocationsScreen() {
                     )}
                 </View>
             </ScrollView>
-        </LinearGradient>
+        </View>
     );
 }
 
